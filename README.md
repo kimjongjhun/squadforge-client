@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# SquadForge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**SquadForge** is a web application designed to help users create balanced teams from a set of players, using a CSV file or manual input. The app allows for the generation of teams based on player averages, group codes, family codes, and friend codes, ensuring fair and even distribution while maintaining group dynamics.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **CSV Upload**: Upload a CSV file containing player names, groups, averages, and other relevant data to generate balanced teams.
+- **Manual Input**: Manually add players and their associated group, family, and friend codes to create teams.
+- **Balanced Teams**: Automatically generates balanced teams by considering average sums, group representation, and family/friend codes.
+- **Group Management**: Add, delete, and assign/unassign members from groups.
+- **Family Management**: Add, delete, and assign/unassign family members.
+- **Friend Management**: Add, delete, and assign/unassign friends to ensure even representation on teams.
+- **Client-Side Data Storage**: Data is kept locally using browser storage for privacy and convenience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. **Clone the Repo**:  
+   Clone the repository to your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-username/squadforge.git
+   cd squadforge
+   ```
 
-### `npm run build`
+2. **Install Dependencies**:  
+   Install the necessary dependencies using npm:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Start the Development Server**:  
+   Run the app locally to start developing:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+   Your app will be available at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Player Data**:  
+   Players' names, averages, and codes (group, family, and friend) are entered into the app, either by uploading a CSV file or manually inputting the data.
+2. **Team Generation**:  
+   SquadForge generates balanced teams based on:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - Players’ averages, ensuring an even distribution of skills.
+   - Group codes, ensuring each group is represented fairly in each team.
+   - Family codes, ensuring no two family members are on the same team.
+   - Friend codes, ensuring that friends are placed together on the same team (if applicable).
 
-## Learn More
+3. **Team Management**:  
+   You can manage the groups, families, and friend codes by adding, deleting, and assigning members.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**: A JavaScript library for building user interfaces.
+- **Material UI**: A popular React UI framework for building clean and responsive designs.
+- **Local Storage**: Data is saved on the client side using the browser’s local storage.
