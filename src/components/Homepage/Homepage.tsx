@@ -6,6 +6,7 @@ import PlayersTable from "../PlayersTable/PlayersTable";
 import { Player } from "../../../types/players";
 import NavbarDrawer from "../NavbarDrawer/NavbarDrawer";
 import GroupModal from "../GroupModal/GroupModal";
+import ClearTable from "../ClearTable/ClearTable";
 
 const Homepage = () => {
   const [players, setPlayers] = useState<Player[]>([]);
@@ -31,7 +32,18 @@ const Homepage = () => {
         spacing={2}
         sx={{ justifyContent: "center", alignItems: "center" }}
       >
-        <Grid size={8}>
+        <Grid
+          container
+          size={8}
+          direction={"row"}
+          sx={{ justifyContent: "space-between" }}
+        >
+          <ClearTable
+            onClick={function (): void {
+              // TODO: implement this
+              throw new Error("Function not implemented.");
+            }}
+          />
           <UploadFile />
         </Grid>
         <Grid size={8}>
